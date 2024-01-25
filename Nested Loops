@@ -1,0 +1,70 @@
+/* Multiple of 5
+This project will output 
+Arya Vadassery
+24 March 2023
+*/
+
+/* Algorithm (Exercise 1)
+
+Level 0:Loop nested loop until k > 5
+          Loop print # until j > 5
+
+Level 1: Loop nested loop 
+          when j < 5, print "#" 
+          1 + j
+          Loop print new row
+            when k < 5 print new line 
+            1 + k
+  */
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner reader = new Scanner (System.in);
+
+
+  // Exercise 1 : SquareBoard
+    System.out.println ("Square Board Exercise:");
+    System.out.println (" ");
+    for (int k = 0; k < 5; k++) {
+      for (int j = 0; j < 5; j++) {
+			System.out.print("#");
+      }
+      System.out.println();
+		}
+    
+  //Exercise 2 : CheckerBoard
+    System.out.println (" ");
+    System.out.println ("Checker Board Exercise:");
+    System.out.println (" ");
+    
+    for (int k = 0; k < 7; k++) {
+      if (k%2 != 0){
+        System.out.print(" ");
+      }
+      for (int j = 0; j < 7; j++) {
+			System.out.print("#");
+      }
+      System.out.println();
+		}
+  //Exercise 3 : TimesTable
+    System.out.println (" ");
+    System.out.println ("Times Table Exercise:");
+    System.out.println (" ");
+    System.out.println ("   1  2  3  4  5  6  7  8  9");
+    System.out.println ("-------------------------------");
+    for (int k = 1; k < 10; k++) {
+      System.out.print(k + "|");
+      for (int j = 1; j < 10; j++) {
+      System.out.print (" ");
+       if (k*j >= 10){
+        System.out.print(k*j);
+        }
+        else{
+			   System.out.print(k*j + " ");
+        }
+      }
+      System.out.println();
+		}
+    
